@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <LinearLayout style="@style/TitleBar"
+    			  android:id="@+id/layout1">
+       				
+       <ImageView style="@style/TitleBarLogo"
+       			  android:id="@+id/img1"	 			
+                  android:src="@drawable/dashboard"
+                  android:onClick="onHome" 
+            	  android:layout_marginTop = "5dip"
+            	  android:layout_marginRight="5dip"
+            	  android:layout_marginLeft="5dip"
+            	  android:layout_marginBottom = "5dip"
+            	  android:paddingBottom = "5dip"
+            	  android:background="@null"
+            	  android:layout_gravity="center" 
+            	  android:paddingLeft="5dip" 
+            	  android:paddingRight="7dip" />
+
+        <ImageView android:layout_width="1px"
+        		   android:layout_height="fill_parent"	
+        		   android:id="@+id/sep"
+			       android:background="@drawable/separator"
+			       android:layout_marginRight="7dip"
+			   />
+			   
+        <TextView style="@style/TitleBarText" 
+        		  android:id="@+id/tv1"
+        		  android:paddingLeft = "8dip"
+        		  android:text="@string/home"/>
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background"
+    android:layout_weight="1"
+    android:padding="6dip">
+    
+    <LinearLayout style="@style/ActivityBody" 
+    			  android:layout_weight="0">
+             
+        <LinearLayout android:orientation="vertical"
+      				  android:layout_width="wrap_content"
+      				  android:layout_height="wrap_content" 
+      				  android:layout_marginTop="60dip" 
+      				  android:layout_marginLeft="40dip" android:layout_marginBottom="40dip"> 
+      				
+        	<ImageView android:id="@+id/photoAlbum"
+            			 style="@style/Home"
+            			 android:onClick="onPhotoAlbum"
+           				 android:src="@drawable/photoalbum"/>
+        
+        	<TextView style="@style/HomeText"
+        			  android:id="@+id/ph1"
+        			  android:text="@string/photoAlbum" 
+        		  	  android:layout_marginTop="10dip"/>
+        		  
+        </LinearLayout>
+        
+        <LinearLayout android:orientation="vertical"
+      				android:layout_width="wrap_content"
+      				android:layout_height="wrap_content" 
+      				android:layout_marginTop="60dip" 
+      				android:layout_marginLeft="60dip" android:layout_marginBottom="40dip">		  
+        
+        	<ImageView 	android:id="@+id/msg"
+            				style="@style/Home"
+            				android:onClick="onMessage"
+            				android:src="@drawable/message"
+            				/>
+            
+            <TextView 	style="@style/HomeText" 
+        		  		android:text="@string/msg" 
+        		  		android:id="@+id/msgtxt"
+        		  		android:layout_marginTop="10dip"/>
+   
+   		 </LinearLayout>
+   		
+    </LinearLayout>
+
+    <LinearLayout style="@style/ActivityBody" 
+    			  android:layout_weight="0">
+      
+      <LinearLayout android:orientation="vertical"
+      				android:layout_width="wrap_content"
+      				android:layout_height="wrap_content" 
+      				android:layout_marginBottom="50dip" 
+      				android:layout_marginLeft="40dip"> 
+        
+        <ImageView android:id="@+id/search"
+            style="@style/Home"
+            android:onClick="onSearch"
+            android:src="@drawable/search"/>
+		
+		<TextView style="@style/HomeText" 
+				  android:id="@+id/searchtxt"
+				   android:text="@string/search" 
+        		  android:layout_marginTop="10dip"/>	
+        		  
+       </LinearLayout> 
+        
+        <LinearLayout android:orientation="vertical"
+      				android:layout_width="wrap_content"
+      				android:layout_height="wrap_content" 
+      				android:layout_marginLeft="60dip" android:layout_marginBottom="50dip">  
+        
+        <ImageView android:id="@+id/about"
+            style="@style/Home"
+            android:onClick="onAbout"
+            android:src="@drawable/about"/>
+            
+            <TextView style="@style/HomeText" 
+        		  	  android:text="@string/about" 
+        		  	  android:layout_marginTop="10dip"/>
+            
+    	</LinearLayout>
+    
+    </LinearLayout>
+
+    
+</LinearLayout>
+
+</LinearLayout>

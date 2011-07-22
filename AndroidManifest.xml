@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="xor.com.dpkg"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application 
+      android:theme="@style/Theme.D1"
+      android:icon="@drawable/icon" 
+      android:label="@string/app_name" android:debuggable="true">
+      <activity android:name=".HomeActivity"
+                  android:label="@string/app_name">
+         <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
+             <category android:name="android.intent.category.LAUNCHER" />
+         </intent-filter>
+      </activity>
+
+      <activity android:name=".SearchActivity"
+            android:theme="@style/Theme.D1"
+            android:label="@string/title_search"/>
+            
+            <activity android:name=".AboutActivity"
+            android:theme="@style/Theme.D1"
+            android:label="@string/title_about"
+            />
+      <activity android:name=".PhotoAlbumActivity"
+            android:theme="@style/Theme.D1"
+            android:label="@string/title_photoalbum"
+            />
+      <activity android:name=".MessagesActivity"
+            android:theme="@style/Theme.D1"
+            android:label="@string/title_message"
+            />
+      
+
+      </application>
+    <uses-sdk android:minSdkVersion="8" />
+
+</manifest> 

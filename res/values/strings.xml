@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="hello">Choose one of the features below.</string>
+
+    <string name="app_name">Dashboard Application</string>
+    <string name="description_logo">Sample</string>
+
+    <string name="photoAlbum">Album</string>
+    <string name="msg">Messages</string>
+    <string name="search">Search</string>
+    <string name="about">About</string>
+    <string name="home">Dashboard</string>
+    
+    <string name="default_intro">This is the default content view for an activity. Be sure to change your activity\'s onCreate method. Use setContentView on a custom layout.</string>
+    <string name="msg_detail">Messages Available.</string>
+    <string name="photoAlbum_detail"> View Albums</string>
+    <string name="about_detail">This app is a sample Dashboard pattern App</string>
+    <string name="search_detail">Search Content</string>
+
+	<string name="title_about">About</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_message">Message</string>
+    <string name="title_photoalbum">PhotoAlbum</string>	
+    
+
+</resources>
